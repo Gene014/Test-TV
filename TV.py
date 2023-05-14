@@ -37,6 +37,14 @@
 
 #Creating Pseudocode
 #Generating Class
+class TV:
+    def ___init___(self):
+        self.channel= 1
+        self.volumeLevel= 1
+        self.on= False
+        # turnOn (): None
+    
+
 #Creating Constructor
 #Creating Instances
 #Call Methods
