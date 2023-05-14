@@ -88,3 +88,4 @@ class TV:
 #Creating Constructor
 #Creating Instances
 #Call Methods
+#call methods to main program
