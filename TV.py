@@ -9,13 +9,10 @@
 #on: bool 
 
 
-# TV()
-# turnOn (): None
-# turnoff(): None
-# getChannel(): int
-#setChannel (channel: int): None
+
+
 #getVolume (): int
-#setVolume (volume Level: int): None
+
 #channe1Up(): None
 #channelDown (): None
 #volumeUp(): None
@@ -37,14 +34,34 @@
 
 #Creating Pseudocode
 #Generating Class
+
+# TV()
 class TV:
     def ___init___(self):
         self.channel= 1
         self.volumeLevel= 1
         self.on= False
         # turnOn (): None
-    
-
+    def turnOn(self):
+        self.on=True
+        # turnOff(): None
+    def turnOff(self):
+        self.on=False
+        # getChannel(): int
+    def getChannel(self):
+        return self.channel
+        #setChannel (channel: int): None
+    def setChannel(self,num):
+        if num>=1 and num<=120:
+            self.channel=num
+        #getVolume (): int
+    def getVolume(self):
+        return self.volumeLevel
+        #setVolume (volume Level: int): None
+    def setVolume(self,volumelevel):
+        if volumelevel>=1 and volumelevel<=7:
+            self.volumeLevel=volumelevel 
+                   
 #Creating Constructor
 #Creating Instances
 #Call Methods
