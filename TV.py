@@ -17,7 +17,7 @@
 
 
 
-#The current channel (1 to 120) of this TV. 
+ 
 #The current volume level (1 to 7) of this TV. 
 #Indicates whether this TV is on/off. 
 #Constructs a default TV object.  
@@ -34,6 +34,8 @@
 
 #Creating Pseudocode
 #Generating Class
+#Creating Constructor
+#Creating Instances
 
 # TV()
 class TV:
@@ -85,7 +87,6 @@ class TV:
             self.channel-=1
         else:
             self.channel=7
-#Creating Constructor
-#Creating Instances
+
 #Call Methods
 #call methods to main program
