@@ -13,10 +13,10 @@
 
 #getVolume (): int
 
-#channe1Up(): None
-#channelDown (): None
-#volumeUp(): None
-#volumeDown (): None
+
+
+
+
 #The current channel (1 to 120) of this TV. 
 #The current volume level (1 to 7) of this TV. 
 #Indicates whether this TV is on/off. 
@@ -41,27 +41,50 @@ class TV:
         self.channel= 1
         self.volumeLevel= 1
         self.on= False
-        # turnOn (): None
+            # turnOn (): None
     def turnOn(self):
         self.on=True
-        # turnOff(): None
+            # turnOff(): None
     def turnOff(self):
         self.on=False
-        # getChannel(): int
+            # getChannel(): int
     def getChannel(self):
         return self.channel
-        #setChannel (channel: int): None
+            #setChannel (channel: int): None
     def setChannel(self,num):
         if num>=1 and num<=120:
             self.channel=num
-        #getVolume (): int
+            #getVolume (): int
     def getVolume(self):
         return self.volumeLevel
-        #setVolume (volume Level: int): None
+            #setVolume (volume Level: int): None
     def setVolume(self,volumelevel):
         if volumelevel>=1 and volumelevel<=7:
             self.volumeLevel=volumelevel 
-                   
+            #channe1Up(): None 
+    def channelUp(self):
+        if self.channel<120:
+            self.channel+=1
+        else:
+            self.channel=1
+            #channelDown (): None
+    def channelDown(self):
+        if self.channel>1:
+            self.channel-=1
+        else:
+            self.channel=120
+            #volumeUp(): None
+    def volumelUp(self):
+        if self.channel<7:
+            self.channel+=1
+        else:
+            self.channel=1
+            #volumeDown (): None
+    def volumeDown(self):
+        if self.channel>1:
+            self.channel-=1
+        else:
+            self.channel=7
 #Creating Constructor
 #Creating Instances
 #Call Methods
