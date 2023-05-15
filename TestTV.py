@@ -13,8 +13,9 @@ tv1.setVolume(3)
 tv2.setChannel(3)
 tv2.setVolume(2)
 
+# Print the desired settings for both TV
+print("\n\33[96m\33[1mtv1's channel is\33[32m",tv1.getChannel(),
+      "\33[96m\33[1mand volume level is\33[32m",tv1.getVolume())
 
-print("tv1's channel is",tv1.getChannel(),
-      "and volume level is",tv1.getVolume())
-print("tv2's channel is",tv2.getChannel(),
-      "and volume level is",tv2.getVolume())
+print("\n\33[96m\33[1mtv2's channel is\33[32m",tv2.getChannel(),
+      "\33[96m\33[1mand volume level is\33[32m",tv2.getVolume())
