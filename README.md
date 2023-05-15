@@ -1,5 +1,5 @@
 # Test-TV
-
+this is where you can configure the settings of your television. More like a _programmed_ **(remote)**
 # What is TV?
 a system for transmitting visual images and sound that are reproduced on screens, chiefly used to broadcast programs for entertainment, information, and education.
 
